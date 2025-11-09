@@ -5,12 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Daniel Martins</title>
   <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1 1 55%;
+      max-width: 600px;
+    }
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-image {
+      flex: 1 1 35%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 800px) {
+      .about-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-text {
+        max-width: 90%;
+      }
+
+      .about-image img {
+        max-width: 220px;
+        margin-bottom: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body class="page">
   <a href="../">← Back</a>
   <h1>About</h1>
-  <p></p>
+
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        Hi, I’m <strong>Daniel Martins</strong>.
+      </p>
+
+      <p>
+        Feel free to <a href="mailto:danielrmartins00@gmail.com">get in touch</a>.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="../images/about/X.jpg" alt="that's me">
+    </div>
+  </div>
 
   <script src="../script.js"></script>
 </body>

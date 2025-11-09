@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvh;
     margin: 0;
 }
 
@@ -45,6 +45,7 @@ body {
 }
 
 .first span:nth-child(2),
+.first span:nth-child(5),
 .first span:nth-child(6),
 .last span:nth-child(3) {
   cursor: pointer;
@@ -138,7 +139,7 @@ body {
 }
 
 .page h1 {
-  font-size: clamp(32px, 6vw, 80px);
+  font-size: clamp(32px, 5vw, 80px);
   margin: 2rem 0 1rem 0;
   text-shadow: 0 0 5px #98cbff;
 }

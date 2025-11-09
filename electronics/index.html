@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics — Daniel Martins</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    .electronics-container {
+      margin-top: 2rem;
+    }
+
+    .post-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .post {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .post:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 2 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .post-date {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      z-index: 2;
+    }
+
+    .post-title {
+      padding: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #98cbff;
+      text-align: center;
+    }
+
+    .post-title:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+      .post-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="page">
+  <a href="../">← Back</a>
+  <h1>Electronics</h1>
+
+  <div class="electronics-container">
+    <p>Fixing, tinkering, and sometimes breaking things beyond repair.</p>
+
+    <div class="post-grid">
+      <div class="post">
+        <img src="../images/electronics/ribbon.jpg" alt="Kobo Glo">
+        <div class="post-date">Oct 2025</div>
+        <div class="post-info">
+          <div class="post-title">A Kobo Glo with multiple comorbidities... and a surprise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+  <script src="../script.js"></script>
+</body>
+</html>
