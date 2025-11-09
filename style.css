@@ -45,7 +45,7 @@ body {
 }
 
 .first span:nth-child(2),
-.first span:nth-child(5),
+/* .first span:nth-child(5), */
 .first span:nth-child(6),
 .last span:nth-child(3) {
   cursor: pointer;
